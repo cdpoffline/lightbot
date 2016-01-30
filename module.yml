@@ -1,0 +1,5 @@
+overview:
+  image: overview.jpg
+  name: Lightbot
+  text: Steuere einen Roboter und hilf ihm dabei, bestimmte Stellen am Boden zu beleuchten.
+  category: beginners
