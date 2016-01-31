@@ -3,5 +3,5 @@ overview:
     lightbot:
 #      image: overview.jpg
       name: Lightbot
-      text: Steuere einen Roboter und hilf ihm dabei, bestimmte Stellen am Boden zu beleuchten.
+      text: Steuere einen Roboter und hilf dabei, bestimmte Stellen am Boden zu beleuchten.
       module: lightbot
