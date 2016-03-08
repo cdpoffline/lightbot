@@ -26,3 +26,5 @@ echo "<html>
 rm -f $zipfile
 zip -r -9 -o $zipfile $lightbot_folder
 
+wget -c -N -O "$website/lightbot.apk" https://github.com/cdpoffline/lightbot/releases/download/do-not-touch/lightbot.apk
+
