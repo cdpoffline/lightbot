@@ -5,21 +5,23 @@ cd "`dirname $0`"
 website="../web"
 zipfile="../web/lightbot.zip"
 lightbot_folder="$website/lightbot.com"
+webpage="flash.html"
 
 mkdir -p "$website"
+
 
 (
   cd $website || { >&2 echo "ERROR: Could not find website directory \"$website\"." ; exit 1 ; }
   echo "downloading to `pwd`"
-  wget -c -N -p -k http://lightbot.com/hocflash.html
+  wget -c -N -p -k "http://lightbot.com/$webpage"
 ) || { >&2 echo "ERROR: could not download." ; exit 1 ; }
 
 echo "<html>
   <head>
-    <meta http-equiv=refresh content='0; url=hocflash.html' />
+    <meta http-equiv=refresh content='0; url=$webpage' />
   </head>
   <body>
-    <h1><a href="hocflash.html">Lightbot</a></h1>
+    <h1><a href=\"$webpage\">Lightbot</a></h1>
   </body>
 </html>" > "$lightbot_folder"/index.html
 
